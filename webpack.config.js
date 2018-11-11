@@ -22,7 +22,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g)/i,
+        test: /\.(png|jpe?g|gif)/i,
         use: [
           {
             loader: "url-loader",
@@ -62,7 +62,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "css/[name].css",  // [hash].
+      filename: "css/style.css",  // [name].[hash].css
       chunkFilename: "[id].css"
     })
   ]
